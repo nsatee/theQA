@@ -1,0 +1,120 @@
+.feed {
+    width: 100%;
+}
+
+.feed-wrapper {
+    .input-question {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+
+        textarea {
+            width: 100%;
+            padding: 20px;
+            background: $white;
+            border-radius: 35px;
+            resize: none;
+            font-size: 20px;
+            color: $black;
+            border: 0;
+            box-shadow: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, .2), 0 0px 10px rgba(0, 0, 0, .1);
+            transition: .2s;
+            font-weight: bold;
+
+            &:hover,
+            &:focus {
+                transform: scale(1.02);
+                box-shadow: 0 6px 20px rgba(0, 0, 0, .2);
+            }
+
+            &::placeholder {
+                color: $black;
+                opacity: .7;
+                font-weight: normal;
+            }
+        }
+
+        .submit {
+            margin-top: 20px;
+            font-size: 20px;
+            width: 50px;
+            height: 50px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                margin-left: -2px;
+            }
+        }
+    }
+}
+
+.question-list {
+    padding-top: 40px;
+
+    .question {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+        padding: 20px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        color: $black;
+        transition: .2s;
+        margin-bottom: 35px;
+
+        &:hover {
+            transform: scale(1.01);
+        }
+
+        &-content {
+            padding-left: 20px;
+        }
+
+        &-action {
+            margin-top: 20px;
+            width: 100%;
+            border-top: 1px solid $gray;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 0;
+
+            button {
+                border: 0;
+                background: none;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                transition: .2s;
+
+                &.like {
+                    color: $green;
+                }
+
+                &.dislike {
+                    color: $red;
+                }
+
+                &.answer {
+                    color: $blue;
+                }
+
+                &:hover {
+                    translate: .2s;
+                    transform: scale(1.2);
+                }
+
+                .total {
+                    font-size: 12px;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+}

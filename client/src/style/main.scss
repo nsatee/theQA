@@ -1,0 +1,75 @@
+body,
+html {
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    color: $black;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea,
+form,
+a,
+button {
+    box-sizing: border-box;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button.btn {
+    border-radius: 40px;
+    padding: 15px 20px;
+    background: $blue;
+    border: 0;
+    color: $white;
+    font-size: 16px;
+}
+
+.wrapper {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.user-thumb {
+    border-radius: 50%;
+    color: $white;
+    background: $blue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.main-content {
+    width: 60%;
+}
+
+.side-content {
+    width: 35%;
+    margin-top: 20px;
+    padding: 10px;
+
+    @import 'components/panel/topQuestion.scss';
+}
+
+.header-panel {
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
