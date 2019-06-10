@@ -3,8 +3,16 @@
 }
 
 .feed-wrapper {
+    .input-question_header {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        display: block;
+        padding-left: 15px;
+        display: none;
+    }
     .input-question {
-        margin-top: 20px;
+        margin-top: 40px;
         width: 100%;
         display: flex;
         justify-content: flex-end;
@@ -55,7 +63,7 @@
 }
 
 .question-list {
-    padding-top: 40px;
+    padding-top: 20px;
 
     .question {
         width: 100%;
@@ -79,10 +87,9 @@
         &-action {
             margin-top: 20px;
             width: 100%;
-            border-top: 1px solid $gray;
             padding: 10px;
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             padding-bottom: 0;
 
             button {
