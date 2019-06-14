@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:800&display=swap');
 @import 'var';
 @import 'reset';
-@import 'main';
 
 @import 'components/mainNav.scss';
 @import 'components/feed.scss';
+
+@import 'components/popup/questionPage.scss';
+
+@import 'main';
